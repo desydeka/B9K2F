@@ -1,0 +1,12 @@
+<script>
+password="ak4d3k4s";
+up=password.replace(/[^A-Z]/g, "").length;
+low=password.replace(/[^a-z]/g, "").length;
+car = (password.match(/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/g) || []).length;
+if(password.length>=8 && up==0 && low>1 && car==0){
+    alert("Success");
+}
+else{
+    alert("Failed"); 
+}
+</script>
