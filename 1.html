@@ -1,0 +1,23 @@
+<html>
+<body>
+<div id="biodata"></div>
+</body>
+</html>
+<script>
+var isi = {
+	"name" : "Desy Kartika Sari",
+	"address" : "Rajabasa Baru",
+	"hobbies" : ["design", "bulu tangkis", "memancing"],
+	"is_married" :  false,
+	"school" : {
+		"highSchool" : "SMAN 1 Way Jepara", 
+		"university" : "Universitas Lampung"
+	},
+	"skills" : [{"nama" : "Photosop", "nilai" : 4},
+		{"nama" : "PHP", "nilai" : 3},
+		{"nama" : "Microsoft Office", "nilai" : 4},
+	]
+};
+var data=JSON.stringify(isi);
+document.getElementById("biodata").innerHTML = data;
+</script>
